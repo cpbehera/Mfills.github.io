@@ -1,0 +1,10 @@
+/* Navbar */
+.navbar .dropdown .dropdown-toggle{
+    border: none;
+    background: none;
+    margin-top: 7px;
+    font-weight: 300;
+}
+.navbar .dropdown .dropdown-toggle:hover{
+    color: #20c997;
+}
