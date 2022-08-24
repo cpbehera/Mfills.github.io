@@ -10,49 +10,34 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <!-- Start Top Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none"
-                        href="mailto:info@company.com">info@company.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
-                </div>
-                <div>
-                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
-                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
-                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/" target="_blank"><i
-                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i
-                            class="fab fa-linkedin fa-sm fa-fw"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Top Nav -->
+
 
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
+    <nav class="navbar navbar-expand-lg bg-white shadow fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                <img src="assets/img/logo/black and green 1.jpg" alt="" class="img-fluid" width="100">
+                <img src="assets/img/logo/fv.PNG" alt="" class="img-fluid" width="100">
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -64,7 +49,7 @@
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
                 id="templatemo_main_nav">
                 <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <ul class="nav navbar-nav d-flex justify-content-between">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -91,7 +76,7 @@
                                 Store
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Locate  Cloud Store </a></li>
+                                <li><a class="dropdown-item" href="#">Locate Cloud Store </a></li>
                             </ul>
                         </div>
                         <li class="nav-item">
@@ -108,20 +93,29 @@
                             </div>
                         </div>
                     </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
-                        data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span
-                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                    </a>
+
+                    <div class="search_box">
+                        <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                            data-bs-target="#templatemo_search">
+                            <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                        </a>
+                        <input type="search" placeholder="Search for products,brands and more">
+                    </div>
+
+                    <div class="icon">
+                        <a class="nav-icon text-decoration-none" href="#">
+                            <img src="assets/img/icon/user.png" alt="" width="18">
+                            <h6 class="mt-2">Profile</h6>
+                        </a>
+                        <a class="nav-icon text-decoration-none" href="#">
+                            <img src="assets/img/icon/heart.png" alt="" width="18">
+                            <h6 class="mt-2">Wishlist</h6>
+                        </a>
+                        <a class="nav-icon text-decoration-none" href="#">
+                            <img src="assets/img/icon/bag.png" alt="" width="18">
+                            <h6 class="mt-2">Bag</h6>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -150,100 +144,76 @@
 
 
     <!-- Start Banner Hero -->
-    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="">
-                        </div>
-                       
-                    </div>
-                </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/bg_4.jpg" alt="">
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                           
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <img src="assets/img/bg_5.jpg" alt="">
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <img src="assets/img/bg_6.jpg" alt="">
             </div>
+           
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="next">
-            <i class="fas fa-chevron-right"></i>
-        </a>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
     <!-- End Banner Hero -->
 
 
-    <!-- Start Categories of The Month -->
-    <section class="container py-5">
-        <div class="row text-center pt-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">Categories of The Month</h1>
-               
+    <!-- Feature products -->
+    <section class="container-fluid">
+        <div class="row feature_product">
+            <div class="col-lg-6">
+                <h1 class="ms-1 h1 text-uppercase">Deal Of The Day</h1>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-3 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Watches</h5>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            <div class="col-12 col-md-3 col-lg-2  p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l2.jpg" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">T-shirt</h5>
+                <p class="text-center"><a class="btn btn-success">Add to cart</a></p>
             </div>
-            <div class="col-12 col-md-3 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+            <div class="col-12 col-md-3 col-lg-2 p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l3.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">T-shirt</h2>
+                <p class="text-center"><a class="btn btn-success">Add to Cart</a></p>
             </div>
-            <div class="col-12 col-md-3 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+            <div class="col-12 col-md-3 col-lg-2 p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l4.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">T-shirt</h2>
+                <p class="text-center"><a class="btn btn-success">Add to Cart</a></p>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l5.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                <p class="text-center"><a class="btn btn-success">Add to Cart</a></p>
             </div>
-            <div class="col-12 col-md-3 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+            <div class="col-12 col-md-3 col-lg-2 p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l6.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-                <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+                <p class="text-center"><a class="btn btn-success">Add to Cart</a></p>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 p-5 mt-3">
+                <a href="#"><img src="./assets/img/products/l7.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+                <p class="text-center"><a class="btn btn-success">Add to Cart</a></p>
             </div>
         </div>
     </section>
-    <!-- End Categories of The Month -->
+    <!-- feature product -->
 
 
     <!-- Start Featured Product -->
     <section class="bg-light">
-        <div class="container py-5">
-            <div class="row text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Featured Product</h1>
+        <div class="container-fluid py-5">
+            <div class="row py-3">
+                <div class="col-lg-6">
+                    <h1 class="h1">BRANDS AT SLASHED PRICES</h1>
                     <p>
                         Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.
@@ -251,10 +221,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card h-100">
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
                         <a href="shop-single.html">
-                            <img src="./assets/img/products/item1.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/products/l7.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -267,18 +237,19 @@
                                 </li>
                                 <li class="text-muted text-right">$240.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor sit</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia
-                                deserunt.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui o
                             </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card h-100">
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
                         <a href="shop-single.html">
-                            <img src="./assets/img/products/item2.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/products/l8.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -291,18 +262,19 @@
                                 </li>
                                 <li class="text-muted text-right">$480.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor sit</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
                             <p class="card-text">
-                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo
-                                ullamcorper.
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra
                             </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card h-100">
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
                         <a href="shop-single.html">
-                            <img src="./assets/img/products/item3.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/products/product-1.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -315,18 +287,19 @@
                                 </li>
                                 <li class="text-muted text-right">$360.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor sit</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
                             <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
-                                scelerisque ipsum lobortis nec.
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam,
                             </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card h-100">
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
                         <a href="shop-single.html">
-                            <img src="./assets/img/products/item4.png" class="card-img-top" alt="...">
+                            <img src="./assets/img/products/product-3.jpg" class="card-img-top img-fluid" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -339,11 +312,112 @@
                                 </li>
                                 <li class="text-muted text-right">$360.00</li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor sit</a>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
                             <p class="card-text">
-                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et
-                                scelerisque ipsum lobortis nec.
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam,
                             </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/products/product-4.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, 
+                            </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/products/product-5.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, 
+                            </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/products/product-6.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, 
+                            </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 mb-4">
+                    <div class="card h-70">
+                        <a href="shop-single.html">
+                            <img src="./assets/img/products/product-7.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">$360.00</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Lorem ipsum, dolor
+                                sit</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, 
+                            </p>
+                            <p><a class="btn btn-success">Add to Cart</a></p>
                         </div>
                     </div>
                 </div>
@@ -377,16 +451,16 @@
                     <div class="col-auto me-auto">
                         <ul class="list-inline text-left footer-icons">
                             <li class="list-inline-item border border-light rounded-circle text-center">
-                                <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
-                                        class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                                <a class="text-light text-decoration-none" target="_blank"
+                                    href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                             </li>
                             <li class="list-inline-item border border-light rounded-circle text-center">
                                 <a class="text-light text-decoration-none" target="_blank"
                                     href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                             </li>
                             <li class="list-inline-item border border-light rounded-circle text-center">
-                                <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                        class="fab fa-twitter fa-lg fa-fw"></i></a>
+                                <a class="text-light text-decoration-none" target="_blank"
+                                    href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
                             </li>
                             <li class="list-inline-item border border-light rounded-circle text-center">
                                 <a class="text-light text-decoration-none" target="_blank"
@@ -425,7 +499,7 @@
 
             </div>
 
-           
+
         </div>
 
         <div class="w-100 bg-black py-3">
@@ -449,7 +523,18 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- End Script -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
