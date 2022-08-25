@@ -497,6 +497,14 @@ ol {
 	display: none;
 }
 
+/* media queries */
+
+@media screen and (min-width:1200px) {
+	.header__logo a img{
+		width: 200px;
+	}
+}
+
 /*---------------------
   Banner
 -----------------------*/
