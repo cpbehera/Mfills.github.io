@@ -1,11 +1,4 @@
-/******************************************************************
-  Template Name: Ashion
-  Description: Ashion ecommerce template
-  Author: Colorib
-  Author URI: https://colorlib.com/
-  Version: 1.0
-  Created: Colorib
-******************************************************************/
+
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -323,11 +316,14 @@ ol {
 }
 
 .header__logo {
-	padding: 26px 0;
+	padding: 22px 0;
 }
 
 .header__logo a {
 	display: inline-block;
+}
+.header__logo a img{
+	width: 200px;
 }
 
 .header__menu {
